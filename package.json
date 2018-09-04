@@ -1,0 +1,13 @@
+{
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "Making a Blockchain with Typescript",
+  "main": "index.js",
+  "repository": "https://github.com/chicrock/typechain.git",
+  "author": "ChicRock <jungsungrak@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
+}
