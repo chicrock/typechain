@@ -8,6 +8,13 @@ Making a Blockchain with Typescript
 
 ```bash
 ]$ yarn global add typescript
+]$ yarn add typescript
+```
+
+### tsc watch
+
+```bash
+]$ yarn add tsc-watch --dev
 ```
 
 ## Setup
@@ -19,9 +26,10 @@ Making a Blockchain with Typescript
   "compilerOptions": {
     "module": "commonjs",
     "target": "ES2015",
-    "sourceMap": true
+    "sourceMap": true,
+    "outDir": "dist"
   },
-  "include": ["index.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
 ```
@@ -30,7 +38,6 @@ Making a Blockchain with Typescript
 
 ```json
 "scripts": {
-  "start": "node index.js",
-  "prestart": "tsc"
+  "start": "tsc-watch --onSuccess \"node dist/index.js\"",
 }
 ```
