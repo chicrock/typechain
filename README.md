@@ -11,10 +11,16 @@ Making a Blockchain with Typescript
 ]$ yarn add typescript
 ```
 
-### tsc watch
+### tsc-watch on dev
 
 ```bash
 ]$ yarn add tsc-watch --dev
+```
+
+### crypto-js
+
+```bash
+]$ yarn add crypto-js
 ```
 
 ## Setup
